@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Client Page</title>
+    <link rel="stylesheet" href="icons/icons.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="custom-container mb-0">
+      <nav class="main-nav">
+        <div class="logo">
+          <img src="./img/logo.png" alt="Site Logo" />
+        </div>
+        <ul class="main-menu">
+          <li><a href="/" class="menu-active">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="#" class="peach-btn">Request Demo</a></li>
+        </ul>
+        <div class="toggle-btn">
+          <i class="bi bi-list"></i>
+        </div>
+      </nav>
+    </header>
+
+    <section class="custom-container profile-section">
+      <div class="row">
+        <div class="col-xl-3 col-md-6">
+          <div class="profile-box">
+            <div class="profile-top">
+              <img src="./img/home/mask1.png" alt="" />
+              <div class="profile-name">
+                <h2 class="fs-22">Medium Business</h2>
+                <p>Your Package</p>
+              </div>
+            </div>
+            <div class="bar-wrapper">
+              <div class="profile-bar"></div>
+            </div>
+            <div class="profile-middle">
+              <ul class="package-info">
+                <li><i class="bi bi-check2"></i> Start with Up to 500 users</li>
+                <li><i class="bi bi-check2"></i> Up to 1 month</li>
+                <li><i class="bi bi-check2"></i> 5 TB storage for users</li>
+                <li><i class="bi bi-check2"></i> Some great features</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-md-6">
+          <div class="checkout-middle">
+            <h2 class="fs-24 black">Step 2. Customize your package</h2>
+            <p class="fs-18 light-black">
+              Select number of users and number of months for this package
+            </p>
+            <table class="checkout-table">
+              <tr>
+                <td>1. Number of Users</td>
+                <td><input type="number" min="0" /></td>
+              </tr>
+              <tr>
+                <td>2. Select the time period</td>
+                <td>
+                  <select name="" id="">
+                    <option value=""></option>
+                    <option value="3">4 months</option>
+                    <option value="6">8 months</option>
+                    <option value="12">12 months</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+            <a href="#">Previous <i class="bi bi-chevron-left"></i></a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+          <div class="checkout-right">
+            <h2 class="fs-24 subtotal-header">Your Subtotal</h2>
+            <div class="p-4">
+              <p>Sub Total $90.00</p>
+              <button class="confirm-btn peach-bg">Confirm Order</button>
+              <div class="checkout-line"></div>
+              <h2 class="fs-22">Promo Code</h2>
+              <input type="text" placeholder="Enter promo code" />
+              <button class="apply-btn peach-bg">Apply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="custom-container">
+        <div class="row footer-row">
+          <div class="col-lg-3">
+            <div class="footer-img">
+              <img src="./img/home/footer-logo.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="footer-menu">
+              <h2 class="fs-22 black">Important Links</h2>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Pricing</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="footer-menu">
+              <h2 class="fs-22 black">Other Links</h2>
+              <ul>
+                <li><a href="#">Privacy & Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Sitemap</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="footer-social">
+              <h2 class="fs-22 black">Follow Us</h2>
+              <ul>
+                <li>
+                  <a href="#"><img src="./img/home/facebook.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./img/home/insta.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="./img/home/Icon awesome-twitter@2x.png" alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./img/home/linkedin.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="./img/home/Icon awesome-youtube@2x.png" alt=""
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-bottom">
+      <p class="text-center fs-18 py-4">
+        © 2021 Ensom City Talent Quest. Powered By Bunchful. Designed by Hasibul
+        Haque Prottoy.
+      </p>
+    </div>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/navbar.js"></script>
+  </body>
+</html>
