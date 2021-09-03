@@ -2620,4 +2620,25 @@ footer .footer-social ul li a img {
     margin-top: 72px;
   }
 }
+
+#yearly {
+  display: none;
+}
+
+.vision .vision-right ul li {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.vision .vision-right ul li:hover {
+  background-color: #fd7575;
+}
+
+.vision .vision-right ul li:hover h2 {
+  color: white;
+}
+
+.vision .vision-right ul li:hover p {
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */

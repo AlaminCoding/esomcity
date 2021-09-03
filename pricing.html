@@ -70,7 +70,7 @@
           <button class="btn2">Yearly</button>
           <div class="back-layer"></div>
         </div>
-        <div class="row price-row align-items-center">
+        <div class="row price-row align-items-center" id="monthly">
           <div class="col-md-6 col-lg-3">
             <div class="price-box">
               <div class="price-desc">
@@ -165,6 +165,113 @@
                   <span> Start with Up to <b>49 users</b></span>
                 </li>
                 <li><i class="bi bi-check2"></i> Up to 1 month</li>
+                <li>
+                  <i class="bi bi-check2"></i
+                  ><span> <b>5 TB</b> storage for users</span>
+                </li>
+                <li><i class="bi bi-check2"></i> Some great features</li>
+              </ul>
+              <button class="peach-btn">
+                Choose Plan <i class="bi bi-arrow-right-short"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row price-row align-items-center" id="yearly">
+          <div class="col-md-6 col-lg-3">
+            <div class="price-box">
+              <div class="price-desc">
+                <img src="./img/pricing/Mask Group -3.png" alt="" />
+                <div class="price-name-user">
+                  <h2 class="black">Bronze</h2>
+                  <p class="fs-20">$5 / user</p>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  <i class="bi bi-check2"></i
+                  ><span>Start with Up to <b>30 users</b></span>
+                </li>
+                <li><i class="bi bi-check2"></i> Up to 1 month</li>
+                <li>
+                  <i class="bi bi-check2"></i
+                  ><span> <b>5 TB</b> storage for users</span>
+                </li>
+                <li><i class="bi bi-check2"></i> Some great features</li>
+              </ul>
+              <button class="peach-btn">
+                Choose Plan <i class="bi bi-arrow-right-short"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="price-box">
+              <div class="price-desc">
+                <img src="./img/pricing/Mask Group -2.png" alt="" />
+                <div class="price-name-user">
+                  <h2 class="black">Silver Business</h2>
+                  <p class="fs-20">$50 / user</p>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  <i class="bi bi-check2"></i>
+                  <span> Start with Up to <b>100 users</b></span>
+                </li>
+                <li><i class="bi bi-check2"></i> Up to 8 month</li>
+                <li>
+                  <i class="bi bi-check2"></i
+                  ><span> <b>5 TB</b> storage for users</span>
+                </li>
+                <li><i class="bi bi-check2"></i> Some great features</li>
+              </ul>
+              <button class="peach-btn">
+                Choose Plan <i class="bi bi-arrow-right-short"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="price-box price-box-popular">
+              <div class="price-desc">
+                <img src="./img/pricing/Mask Group -1.png" alt="" />
+                <div class="price-name-user">
+                  <h2 class="black">Gold Business</h2>
+                  <p class="fs-20">$135 / user</p>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  <i class="bi bi-check2"></i>
+                  <span>Start with Up to <b>800 users</b></span>
+                </li>
+                <li><i class="bi bi-check2"></i> Up to 9 month</li>
+                <li>
+                  <i class="bi bi-check2"></i
+                  ><span> <b>8 TB</b> storage for users</span>
+                </li>
+                <li><i class="bi bi-check2"></i> Some great features</li>
+              </ul>
+              <button class="peach-btn">
+                Choose Plan <i class="bi bi-arrow-right-short"></i>
+              </button>
+              <span class="popular-badge">Popular</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="price-box">
+              <div class="price-desc">
+                <img src="./img/pricing/Mask Group -2.png" alt="" />
+                <div class="price-name-user">
+                  <h2 class="black">Platinum Business</h2>
+                  <p class="fs-20">1500+ user</p>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  <i class="bi bi-check2"></i>
+                  <span> Start with Up to <b>60 users</b></span>
+                </li>
+                <li><i class="bi bi-check2"></i> Up to 2 year</li>
                 <li>
                   <i class="bi bi-check2"></i
                   ><span> <b>5 TB</b> storage for users</span>
@@ -422,16 +529,22 @@
       const btn1 = document.querySelector(".btn1");
       const btn2 = document.querySelector(".btn2");
       const layer = document.querySelector(".back-layer");
+      const monthly = document.getElementById("monthly");
+      const yearly = document.getElementById("yearly");
 
       btn1.addEventListener("mouseover", function () {
         layer.style.left = "1%";
         btn1.style.color = "white";
         btn2.style.color = "black";
+        monthly.style.display = "flex";
+        yearly.style.display = "none";
       });
       btn2.addEventListener("mouseover", function () {
         layer.style.left = "49%";
         btn1.style.color = "black";
         btn2.style.color = "white";
+        monthly.style.display = "none";
+        yearly.style.display = "flex";
       });
     </script>
   </body>
